@@ -19,4 +19,4 @@ class TestConsumer(WebsocketConsumer):
         self.send(text_data=json.dumps({'status' : 'We got you'}))
 
     def disconnect(self, *args, **kwargs):
-        print("Websocket disconnected")
+        print("disconnected")
